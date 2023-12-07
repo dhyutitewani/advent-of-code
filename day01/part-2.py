@@ -17,7 +17,7 @@ def sum_nums(ln):
     return num
 
 def main():
-    with open('input_data/2.txt','r') as f:
+    with open('input_data/1.txt','r') as f:
         ls = f.readlines()
 
     s = 0
