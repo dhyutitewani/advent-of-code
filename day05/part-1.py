@@ -9,14 +9,13 @@ maps = [list(map(int, re.findall(r'\d+', ln))) for ln in data[1:]]
 for m in maps:
     l = []
     for i in seeds:
-        print(i)
         for j in range(0, len(m), 3):
             c = m[j:j+3]
             if c[1] <= i < c[1] + c[2]:
-                l.append(i + abs(c[1] - c[0]))
+                l.append(i - c[1] + c[0])
                 break
         else:
             l.append(i)
     seeds = l
-    print(seeds)
-print(l)
+
+print(min(l))
