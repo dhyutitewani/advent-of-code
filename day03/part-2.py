@@ -1,5 +1,3 @@
-import re 
-
 def sum_calc(vs):
     total = 0
 
