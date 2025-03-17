@@ -1,8 +1,3 @@
-"""
-    use a dictionary to solve this
-    kays will be do() and dont()
-"""
-
 import re
 
 def mul(a, b):
